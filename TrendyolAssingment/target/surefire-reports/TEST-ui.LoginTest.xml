@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ui.LoginTest" time="8.373" tests="4" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="webdriver.chrome.driver" value="src/main/java/models/browsers/chrome/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/suleyman.aktas/Desktop/ödev/TrendyolAssingment/target/test-classes:/Users/suleyman.aktas/Desktop/ödev/TrendyolAssingment/target/classes:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/suleyman.aktas/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/suleyman.aktas/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/suleyman.aktas/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/suleyman.aktas/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/suleyman.aktas/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/suleyman.aktas/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/suleyman.aktas/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/suleyman.aktas/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/suleyman.aktas/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/suleyman.aktas/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/suleyman.aktas/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/suleyman.aktas/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/Users/suleyman.aktas/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/suleyman.aktas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/suleyman.aktas/.m2/repository/io/qameta/allure/allure-junit4/2.8.0/allure-junit4-2.8.0.jar:/Users/suleyman.aktas/.m2/repository/io/qameta/allure/allure-java-commons/2.8.0/allure-java-commons-2.8.0.jar:/Users/suleyman.aktas/.m2/repository/io/qameta/allure/allure-model/2.8.0/allure-model-2.8.0.jar:/Users/suleyman.aktas/.m2/repository/org/apache/tika/tika-core/1.19.1/tika-core-1.19.1.jar:/Users/suleyman.aktas/.m2/repository/org/aspectj/aspectjrt/1.9.1/aspectjrt-1.9.1.jar:/Users/suleyman.aktas/.m2/repository/org/jooq/joor-java-8/0.9.9/joor-java-8-0.9.9.jar:/Users/suleyman.aktas/.m2/repository/pl/pragmatists/JUnitParams/1.1.1/JUnitParams-1.1.1.jar:/Users/suleyman.aktas/.m2/repository/io/rest-assured/rest-assured/3.1.1/rest-assured-3.1.1.jar:/Users/suleyman.aktas/.m2/repository/org/codehaus/groovy/groovy/2.4.12/groovy-2.4.12.jar:/Users/suleyman.aktas/.m2/repository/org/codehaus/groovy/groovy-xml/2.4.12/groovy-xml-2.4.12.jar:/Users/suleyman.aktas/.m2/repository/org/apache/httpcomponents/httpmime/4.5.1/httpmime-4.5.1.jar:/Users/suleyman.aktas/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/suleyman.aktas/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/suleyman.aktas/.m2/repository/io/rest-assured/json-path/3.1.1/json-path-3.1.1.jar:/Users/suleyman.aktas/.m2/repository/org/codehaus/groovy/groovy-json/2.4.12/groovy-json-2.4.12.jar:/Users/suleyman.aktas/.m2/repository/io/rest-assured/rest-assured-common/3.1.1/rest-assured-common-3.1.1.jar:/Users/suleyman.aktas/.m2/repository/io/rest-assured/xml-path/3.1.1/xml-path-3.1.1.jar:/Users/suleyman.aktas/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/suleyman.aktas/.m2/repository/org/apache/logging/log4j/log4j-api/2.16.0/log4j-api-2.16.0.jar:/Users/suleyman.aktas/.m2/repository/org/apache/logging/log4j/log4j-core/2.16.0/log4j-core-2.16.0.jar:/Users/suleyman.aktas/.m2/repository/io/github/bonigarcia/webdrivermanager/1.7.2/webdrivermanager-1.7.2.jar:/Users/suleyman.aktas/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/Users/suleyman.aktas/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/Users/suleyman.aktas/.m2/repository/com/typesafe/config/1.2.1/config-1.2.1.jar:/Users/suleyman.aktas/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/suleyman.aktas/.m2/repository/org/rauschig/jarchivelib/0.7.1/jarchivelib-0.7.1.jar:/Users/suleyman.aktas/.m2/repository/org/apache/commons/commons-compress/1.9/commons-compress-1.9.jar:/Users/suleyman.aktas/.m2/repository/org/jsoup/jsoup/1.10.2/jsoup-1.10.2.jar:/Users/suleyman.aktas/.m2/repository/net/lightbody/bmp/browsermob-core/2.1.5/browsermob-core-2.1.5.jar:/Users/suleyman.aktas/.m2/repository/net/lightbody/bmp/littleproxy/1.1.0-beta-bmp-17/littleproxy-1.1.0-beta-bmp-17.jar:/Users/suleyman.aktas/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9.jar:/Users/suleyman.aktas/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar:/Users/suleyman.aktas/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.9/jackson-annotations-2.8.9.jar:/Users/suleyman.aktas/.m2/repository/dnsjava/dnsjava/2.1.8/dnsjava-2.1.8.jar:/Users/suleyman.aktas/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/suleyman.aktas/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/Users/suleyman.aktas/.m2/repository/io/netty/netty-all/4.0.51.Final/netty-all-4.0.51.Final.jar:/Users/suleyman.aktas/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.58/bcprov-jdk15on-1.58.jar:/Users/suleyman.aktas/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.58/bcpkix-jdk15on-1.58.jar:/Users/suleyman.aktas/.m2/repository/net/lightbody/bmp/mitm/2.1.5/mitm-2.1.5.jar:/Users/suleyman.aktas/.m2/repository/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0.jar:/Users/suleyman.aktas/.m2/repository/com/github/tomakehurst/wiremock-jre8/2.26.3/wiremock-jre8-2.26.3.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-server/9.4.20.v20190813/jetty-server-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-http/9.4.20.v20190813/jetty-http-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-io/9.4.20.v20190813/jetty-io-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.20.v20190813/jetty-servlet-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-security/9.4.20.v20190813/jetty-security-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-servlets/9.4.20.v20190813/jetty-servlets-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-continuation/9.4.20.v20190813/jetty-continuation-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-util/9.4.20.v20190813/jetty-util-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-webapp/9.4.20.v20190813/jetty-webapp-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.20.v20190813/jetty-xml-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar:/Users/suleyman.aktas/.m2/repository/org/xmlunit/xmlunit-legacy/2.6.2/xmlunit-legacy-2.6.2.jar:/Users/suleyman.aktas/.m2/repository/org/xmlunit/xmlunit-placeholders/2.6.2/xmlunit-placeholders-2.6.2.jar:/Users/suleyman.aktas/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/suleyman.aktas/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/suleyman.aktas/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/suleyman.aktas/.m2/repository/org/ow2/asm/asm/7.0/asm-7.0.jar:/Users/suleyman.aktas/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/Users/suleyman.aktas/.m2/repository/com/github/jknack/handlebars/4.1.2/handlebars-4.1.2.jar:/Users/suleyman.aktas/.m2/repository/com/github/jknack/handlebars-helpers/4.1.2/handlebars-helpers-4.1.2.jar:/Users/suleyman.aktas/.m2/repository/com/flipkart/zjsonpatch/zjsonpatch/0.4.4/zjsonpatch-0.4.4.jar:/Users/suleyman.aktas/.m2/repository/commons-fileupload/commons-fileupload/1.4/commons-fileupload-1.4.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/http2/http2-server/9.4.20.v20190813/http2-server-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/http2/http2-common/9.4.20.v20190813/http2-common-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/http2/http2-hpack/9.4.20.v20190813/http2-hpack-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-alpn-server/9.4.20.v20190813/jetty-alpn-server-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-alpn-conscrypt-server/9.4.20.v20190813/jetty-alpn-conscrypt-server-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/conscrypt/conscrypt-openjdk-uber/2.1.0/conscrypt-openjdk-uber-2.1.0.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-alpn-conscrypt-client/9.4.20.v20190813/jetty-alpn-conscrypt-client-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-alpn-client/9.4.20.v20190813/jetty-alpn-client-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/net/javacrumbs/json-unit/json-unit-core/2.12.0/json-unit-core-2.12.0.jar:/Users/suleyman.aktas/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/Users/suleyman.aktas/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/suleyman.aktas/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="remote" value="false"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Europe/Istanbul"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="TR"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/18/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/suleyman.aktas/Desktop/ödev/TrendyolAssingment/target/surefire/surefirebooter7762923910090845946.jar /Users/suleyman.aktas/Desktop/ödev/TrendyolAssingment/target/surefire 2022-04-22T15-31-23_936-jvmRun1 surefire5904020915451747327tmp surefire_012165668341719875084tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/suleyman.aktas/Desktop/ödev/TrendyolAssingment/target/test-classes:/Users/suleyman.aktas/Desktop/ödev/TrendyolAssingment/target/classes:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/suleyman.aktas/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/suleyman.aktas/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/suleyman.aktas/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/suleyman.aktas/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/suleyman.aktas/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/suleyman.aktas/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/suleyman.aktas/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/suleyman.aktas/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/suleyman.aktas/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/suleyman.aktas/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/suleyman.aktas/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/suleyman.aktas/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/Users/suleyman.aktas/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/suleyman.aktas/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/suleyman.aktas/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/suleyman.aktas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/suleyman.aktas/.m2/repository/io/qameta/allure/allure-junit4/2.8.0/allure-junit4-2.8.0.jar:/Users/suleyman.aktas/.m2/repository/io/qameta/allure/allure-java-commons/2.8.0/allure-java-commons-2.8.0.jar:/Users/suleyman.aktas/.m2/repository/io/qameta/allure/allure-model/2.8.0/allure-model-2.8.0.jar:/Users/suleyman.aktas/.m2/repository/org/apache/tika/tika-core/1.19.1/tika-core-1.19.1.jar:/Users/suleyman.aktas/.m2/repository/org/aspectj/aspectjrt/1.9.1/aspectjrt-1.9.1.jar:/Users/suleyman.aktas/.m2/repository/org/jooq/joor-java-8/0.9.9/joor-java-8-0.9.9.jar:/Users/suleyman.aktas/.m2/repository/pl/pragmatists/JUnitParams/1.1.1/JUnitParams-1.1.1.jar:/Users/suleyman.aktas/.m2/repository/io/rest-assured/rest-assured/3.1.1/rest-assured-3.1.1.jar:/Users/suleyman.aktas/.m2/repository/org/codehaus/groovy/groovy/2.4.12/groovy-2.4.12.jar:/Users/suleyman.aktas/.m2/repository/org/codehaus/groovy/groovy-xml/2.4.12/groovy-xml-2.4.12.jar:/Users/suleyman.aktas/.m2/repository/org/apache/httpcomponents/httpmime/4.5.1/httpmime-4.5.1.jar:/Users/suleyman.aktas/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/suleyman.aktas/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/suleyman.aktas/.m2/repository/io/rest-assured/json-path/3.1.1/json-path-3.1.1.jar:/Users/suleyman.aktas/.m2/repository/org/codehaus/groovy/groovy-json/2.4.12/groovy-json-2.4.12.jar:/Users/suleyman.aktas/.m2/repository/io/rest-assured/rest-assured-common/3.1.1/rest-assured-common-3.1.1.jar:/Users/suleyman.aktas/.m2/repository/io/rest-assured/xml-path/3.1.1/xml-path-3.1.1.jar:/Users/suleyman.aktas/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/suleyman.aktas/.m2/repository/org/apache/logging/log4j/log4j-api/2.16.0/log4j-api-2.16.0.jar:/Users/suleyman.aktas/.m2/repository/org/apache/logging/log4j/log4j-core/2.16.0/log4j-core-2.16.0.jar:/Users/suleyman.aktas/.m2/repository/io/github/bonigarcia/webdrivermanager/1.7.2/webdrivermanager-1.7.2.jar:/Users/suleyman.aktas/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/Users/suleyman.aktas/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/Users/suleyman.aktas/.m2/repository/com/typesafe/config/1.2.1/config-1.2.1.jar:/Users/suleyman.aktas/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/suleyman.aktas/.m2/repository/org/rauschig/jarchivelib/0.7.1/jarchivelib-0.7.1.jar:/Users/suleyman.aktas/.m2/repository/org/apache/commons/commons-compress/1.9/commons-compress-1.9.jar:/Users/suleyman.aktas/.m2/repository/org/jsoup/jsoup/1.10.2/jsoup-1.10.2.jar:/Users/suleyman.aktas/.m2/repository/net/lightbody/bmp/browsermob-core/2.1.5/browsermob-core-2.1.5.jar:/Users/suleyman.aktas/.m2/repository/net/lightbody/bmp/littleproxy/1.1.0-beta-bmp-17/littleproxy-1.1.0-beta-bmp-17.jar:/Users/suleyman.aktas/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.9/jackson-core-2.8.9.jar:/Users/suleyman.aktas/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar:/Users/suleyman.aktas/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.9/jackson-annotations-2.8.9.jar:/Users/suleyman.aktas/.m2/repository/dnsjava/dnsjava/2.1.8/dnsjava-2.1.8.jar:/Users/suleyman.aktas/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/suleyman.aktas/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/Users/suleyman.aktas/.m2/repository/io/netty/netty-all/4.0.51.Final/netty-all-4.0.51.Final.jar:/Users/suleyman.aktas/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.58/bcprov-jdk15on-1.58.jar:/Users/suleyman.aktas/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.58/bcpkix-jdk15on-1.58.jar:/Users/suleyman.aktas/.m2/repository/net/lightbody/bmp/mitm/2.1.5/mitm-2.1.5.jar:/Users/suleyman.aktas/.m2/repository/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0.jar:/Users/suleyman.aktas/.m2/repository/com/github/tomakehurst/wiremock-jre8/2.26.3/wiremock-jre8-2.26.3.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-server/9.4.20.v20190813/jetty-server-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-http/9.4.20.v20190813/jetty-http-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-io/9.4.20.v20190813/jetty-io-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.20.v20190813/jetty-servlet-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-security/9.4.20.v20190813/jetty-security-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-servlets/9.4.20.v20190813/jetty-servlets-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-continuation/9.4.20.v20190813/jetty-continuation-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-util/9.4.20.v20190813/jetty-util-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-webapp/9.4.20.v20190813/jetty-webapp-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.20.v20190813/jetty-xml-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar:/Users/suleyman.aktas/.m2/repository/org/xmlunit/xmlunit-legacy/2.6.2/xmlunit-legacy-2.6.2.jar:/Users/suleyman.aktas/.m2/repository/org/xmlunit/xmlunit-placeholders/2.6.2/xmlunit-placeholders-2.6.2.jar:/Users/suleyman.aktas/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/suleyman.aktas/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/suleyman.aktas/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/suleyman.aktas/.m2/repository/org/ow2/asm/asm/7.0/asm-7.0.jar:/Users/suleyman.aktas/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/Users/suleyman.aktas/.m2/repository/com/github/jknack/handlebars/4.1.2/handlebars-4.1.2.jar:/Users/suleyman.aktas/.m2/repository/com/github/jknack/handlebars-helpers/4.1.2/handlebars-helpers-4.1.2.jar:/Users/suleyman.aktas/.m2/repository/com/flipkart/zjsonpatch/zjsonpatch/0.4.4/zjsonpatch-0.4.4.jar:/Users/suleyman.aktas/.m2/repository/commons-fileupload/commons-fileupload/1.4/commons-fileupload-1.4.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/http2/http2-server/9.4.20.v20190813/http2-server-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/http2/http2-common/9.4.20.v20190813/http2-common-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/http2/http2-hpack/9.4.20.v20190813/http2-hpack-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-alpn-server/9.4.20.v20190813/jetty-alpn-server-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-alpn-conscrypt-server/9.4.20.v20190813/jetty-alpn-conscrypt-server-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/conscrypt/conscrypt-openjdk-uber/2.1.0/conscrypt-openjdk-uber-2.1.0.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-alpn-conscrypt-client/9.4.20.v20190813/jetty-alpn-conscrypt-client-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/org/eclipse/jetty/jetty-alpn-client/9.4.20.v20190813/jetty-alpn-client-9.4.20.v20190813.jar:/Users/suleyman.aktas/.m2/repository/net/javacrumbs/json-unit/json-unit-core/2.12.0/json-unit-core-2.12.0.jar:/Users/suleyman.aktas/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/Users/suleyman.aktas/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/suleyman.aktas/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/suleyman.aktas"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-03-22"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/18/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/suleyman.aktas/Desktop/ödev/TrendyolAssingment"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/suleyman.aktas/Desktop/ödev/TrendyolAssingment/target/surefire/surefirebooter7762923910090845946.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="18+0"/>
+    <property name="user.name" value="suleyman.aktas"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="browser" value="chrome"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/suleyman.aktas/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/5_/wyxvz7wj3z5fmgxr9jm3j58h0000gp/T/"/>
+    <property name="java.version" value="18"/>
+    <property name="user.dir" value="/Users/suleyman.aktas/Desktop/ödev/TrendyolAssingment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/suleyman.aktas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="18+0"/>
+    <property name="grid" value="123123123"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank password,suleyman.aktas@n11.com,,false,Lütfen şifrenizi giriniz.) [2]" classname="ui.LoginTest" time="7.488">
+    <error message="javascript error: Cannot read properties of null (reading &apos;style&apos;)&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;Mac111019&apos;, ip: &apos;fe80:0:0:0:14c3:e670:a94d:3e40%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9f6bcb3d8068c34f2d3431df190f9862" type="org.openqa.selenium.JavascriptException"><![CDATA[org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Mac111019', ip: 'fe80:0:0:0:14c3:e670:a94d:3e40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f6bcb3d8068c34f2d3431df190f9862
+	at ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(LoginTest.java:24)
+]]></error>
+    <system-out><![CDATA[&amp#27;[32m15:31:26.147 [pool-2-thread-3] INFO  TestWatcherItems.starting - TEST STARTED: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4](ui.LoginTest)
+&amp#27;[m
+&amp#27;[32m15:31:26.329 [pool-2-thread-6] INFO  Browser.initBrowser - Open local {chrome} models.browser
+&amp#27;[m&amp#27;[32m15:31:26.329 [pool-2-thread-3] INFO  Browser.initBrowser - Open local {chrome} models.browser
+&amp#27;[m
+S
+t
+a
+r
+t
+i
+n
+g
+ 
+C
+h
+r
+o
+m
+e
+D
+r
+i
+v
+e
+r
+ 
+9
+9
+.
+0
+.
+4
+8
+4
+4
+.
+5
+1
+ 
+(
+d
+5
+3
+7
+e
+c
+0
+2
+4
+7
+4
+b
+5
+a
+f
+e
+2
+3
+6
+8
+4
+e
+7
+9
+6
+3
+d
+5
+3
+8
+8
+9
+6
+c
+6
+3
+a
+c
+7
+7
+-
+r
+e
+f
+s
+/
+b
+r
+a
+n
+c
+h
+-
+h
+e
+a
+d
+s
+/
+4
+8
+4
+4
+@
+{
+#
+8
+7
+5
+}
+)
+ 
+o
+n
+ 
+p
+o
+r
+t
+ 
+1
+4
+8
+7
+5
+
+
+O
+n
+l
+y
+ 
+l
+o
+c
+a
+l
+ 
+c
+o
+n
+n
+e
+c
+t
+i
+o
+n
+s
+ 
+a
+r
+e
+ 
+a
+l
+l
+o
+w
+e
+d
+.
+
+
+P
+l
+e
+a
+s
+e
+ 
+s
+e
+e
+ 
+h
+t
+t
+p
+s
+:
+/
+/
+c
+h
+r
+o
+m
+e
+d
+r
+i
+v
+e
+r
+.
+c
+h
+r
+o
+m
+i
+u
+m
+.
+o
+r
+g
+/
+s
+e
+c
+u
+r
+i
+t
+y
+-
+c
+o
+n
+s
+i
+d
+e
+r
+a
+t
+i
+o
+n
+s
+ 
+f
+o
+r
+ 
+s
+u
+g
+g
+e
+s
+t
+i
+o
+n
+s
+ 
+o
+n
+ 
+k
+e
+e
+p
+i
+n
+g
+ 
+C
+h
+r
+o
+m
+e
+D
+r
+i
+v
+e
+r
+ 
+s
+a
+f
+e
+.
+
+
+C
+h
+r
+o
+m
+e
+D
+r
+i
+v
+e
+r
+ 
+w
+a
+s
+ 
+s
+t
+a
+r
+t
+e
+d
+ 
+s
+u
+c
+c
+e
+s
+s
+f
+u
+l
+l
+y
+.
+
+
+[
+1
+6
+5
+0
+6
+3
+0
+6
+8
+9
+.
+6
+3
+0
+]
+[
+W
+A
+R
+N
+I
+N
+G
+]
+:
+ 
+T
+h
+i
+s
+ 
+v
+e
+r
+s
+i
+o
+n
+ 
+o
+f
+ 
+C
+h
+r
+o
+m
+e
+D
+r
+i
+v
+e
+r
+ 
+h
+a
+s
+ 
+n
+o
+t
+ 
+b
+e
+e
+n
+ 
+t
+e
+s
+t
+e
+d
+ 
+w
+i
+t
+h
+ 
+C
+h
+r
+o
+m
+e
+ 
+v
+e
+r
+s
+i
+o
+n
+ 
+1
+0
+0
+.
+
+
+Apr 22, 2022 3:31:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+[2022-04-22 15:31:33:433] [pool-2-thread-3] ERROR AllureLifecycle - Could not add attachment: no test is running
+&amp#27;[1;31m15:31:33.445 [pool-2-thread-3] ERROR TestStopper$1.evaluate - 
+Failed test: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4]
+	visitor email: suleyman.aktas@n11.com
+	visitor's user name: null
+&amp#27;[m&amp#27;[1;31m15:31:33.445 [pool-2-thread-4] ERROR TestStopper$1.evaluate - 
+Failed test: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4]
+	visitor email: suleyman.aktas@n11.com
+	visitor's user name: null
+&amp#27;[m
+[2022-04-22 15:31:33:572] [pool-2-thread-3] ERROR AllureLifecycle - Could not update test case: test case with uuid 1c6f06f9-8300-437b-bd16-c76609c8dff3 not found
+[2022-04-22 15:31:33:572] [pool-2-thread-3] ERROR AllureLifecycle - Could not update test case: test case with uuid 1c6f06f9-8300-437b-bd16-c76609c8dff3 not found
+[2022-04-22 15:31:33:573] [pool-2-thread-3] ERROR AllureLifecycle - Could not update test case: test case with uuid 1c6f06f9-8300-437b-bd16-c76609c8dff3 not found
+[2022-04-22 15:31:33:573] [pool-2-thread-3] ERROR AllureLifecycle - Could not stop test case: test case with uuid 1c6f06f9-8300-437b-bd16-c76609c8dff3 not found
+[2022-04-22 15:31:33:574] [pool-2-thread-3] ERROR AllureLifecycle - Could not write test case: test case with uuid 1c6f06f9-8300-437b-bd16-c76609c8dff3 not found
+&amp#27;[32m15:31:26.329 [pool-2-thread-4] INFO  Browser.initBrowser - Open local {chrome} models.browser
+&amp#27;[m&amp#27;[1;31m15:31:31.669 [pool-2-thread-4] ERROR TestWatcherItems.failed - TEST HAS BEEN FAILED: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4](ui.LoginTest)
+&amp#27;[m]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 37533
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1650630689.605][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
+Apr 22, 2022 3:31:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4]" classname="ui.LoginTest" time="7.452">
+    <error message="javascript error: Cannot read properties of null (reading &apos;style&apos;)&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;Mac111019&apos;, ip: &apos;fe80:0:0:0:14c3:e670:a94d:3e40%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65032}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e72eef65153a218e78e599f67d5a99ce" type="org.openqa.selenium.JavascriptException"><![CDATA[org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Mac111019', ip: 'fe80:0:0:0:14c3:e670:a94d:3e40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65032}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e72eef65153a218e78e599f67d5a99ce
+	at ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(LoginTest.java:24)
+]]></error>
+    <system-out><![CDATA[&amp#27;[32m15:31:26.196 [pool-2-thread-6] INFO  TestWatcherItems.starting - TEST STARTED: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4](ui.LoginTest)
+&amp#27;[m&amp#27;[32m15:31:26.196 [pool-2-thread-4] INFO  TestWatcherItems.starting - TEST STARTED: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4](ui.LoginTest)
+&amp#27;[m&amp#27;[1;31m15:31:31.438 [pool-2-thread-6] ERROR TestWatcherItems.failed - TEST HAS BEEN FAILED: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4](ui.LoginTest)
+&amp#27;[m&amp#27;[1;31m15:31:31.438 [pool-2-thread-3] ERROR TestWatcherItems.failed - TEST HAS BEEN FAILED: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4](ui.LoginTest)
+&amp#27;[m&amp#27;[1;31m15:31:33.445 [pool-2-thread-6] ERROR TestStopper$1.evaluate - 
+Failed test: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4]
+	visitor email: 
+	visitor's user name: null
+&amp#27;[m]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 46528
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1650630689.372][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
+Apr 22, 2022 3:31:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with wrong password,suleyman.aktas@n11.com,wrongPassw0rd,false,E-posta adresiniz ve/veya şifreniz hatalı.) [1]" classname="ui.LoginTest" time="8.373">
+    <error message="javascript error: Cannot read properties of null (reading &apos;style&apos;)&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;Mac111019&apos;, ip: &apos;fe80:0:0:0:14c3:e670:a94d:3e40%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ea5a2abbded2ffc1b44a18bec382189e" type="org.openqa.selenium.JavascriptException"><![CDATA[org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Mac111019', ip: 'fe80:0:0:0:14c3:e670:a94d:3e40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ea5a2abbded2ffc1b44a18bec382189e
+	at ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(LoginTest.java:24)
+]]></error>
+    <system-out><![CDATA[&amp#27;[32m15:31:26.329 [pool-2-thread-5] INFO  Browser.initBrowser - Open local {chrome} models.browser
+&amp#27;[m&amp#27;[1;31m15:31:32.590 [pool-2-thread-5] ERROR TestWatcherItems.failed - TEST HAS BEEN FAILED: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4](ui.LoginTest)
+&amp#27;[m&amp#27;[1;31m15:31:34.385 [pool-2-thread-5] ERROR TestStopper$1.evaluate - 
+Failed test: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4]
+	visitor email: suleyman.aktas@n11.com
+	visitor's user name: null
+&amp#27;[m]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 8416
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1650630691.393][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
+Apr 22, 2022 3:31:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email,,Passw0rd,false,Lütfen geçerli bir e-posta adresi giriniz.) [3]" classname="ui.LoginTest" time="8.37">
+    <error message="javascript error: Cannot read properties of null (reading &apos;style&apos;)&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;Mac111019&apos;, ip: &apos;fe80:0:0:0:14c3:e670:a94d:3e40%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;18&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65044}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6888f8e3c87a416e6dfda01f75f202e7" type="org.openqa.selenium.JavascriptException"><![CDATA[org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Mac111019', ip: 'fe80:0:0:0:14c3:e670:a94d:3e40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65044}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6888f8e3c87a416e6dfda01f75f202e7
+	at ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(LoginTest.java:24)
+]]></error>
+    <system-out><![CDATA[&amp#27;[32m15:31:26.196 [pool-2-thread-2] INFO  TestWatcherItems.starting - TEST STARTED: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4](ui.LoginTest)
+&amp#27;[m&amp#27;[32m15:31:26.196 [pool-2-thread-5] INFO  TestWatcherItems.starting - TEST STARTED: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4](ui.LoginTest)
+&amp#27;[m&amp#27;[32m15:31:26.329 [pool-2-thread-2] INFO  Browser.initBrowser - Open local {chrome} models.browser
+&amp#27;[m&amp#27;[1;31m15:31:32.442 [pool-2-thread-2] ERROR TestWatcherItems.failed - TEST HAS BEEN FAILED: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4](ui.LoginTest)
+&amp#27;[m&amp#27;[1;31m15:31:34.384 [pool-2-thread-2] ERROR TestStopper$1.evaluate - 
+Failed test: shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4]
+	visitor email: 
+	visitor's user name: null
+&amp#27;[m]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 19969
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1650630689.852][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
+Apr 22, 2022 3:31:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

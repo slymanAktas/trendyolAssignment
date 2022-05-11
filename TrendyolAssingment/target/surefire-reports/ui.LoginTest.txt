@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: ui.LoginTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 8.373 s <<< FAILURE! - in ui.LoginTest
+ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank password,suleyman.aktas@n11.com,,false,Lütfen şifrenizi giriniz.) [2]  Time elapsed: 7.488 s  <<< ERROR!
+org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Mac111019', ip: 'fe80:0:0:0:14c3:e670:a94d:3e40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f6bcb3d8068c34f2d3431df190f9862
+	at ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(LoginTest.java:24)
+
+ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email and password,,,false,Lütfen geçerli bir e-posta adresi giriniz.) [4]  Time elapsed: 7.452 s  <<< ERROR!
+org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Mac111019', ip: 'fe80:0:0:0:14c3:e670:a94d:3e40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65032}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e72eef65153a218e78e599f67d5a99ce
+	at ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(LoginTest.java:24)
+
+ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with wrong password,suleyman.aktas@n11.com,wrongPassw0rd,false,E-posta adresiniz ve/veya şifreniz hatalı.) [1]  Time elapsed: 8.373 s  <<< ERROR!
+org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Mac111019', ip: 'fe80:0:0:0:14c3:e670:a94d:3e40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ea5a2abbded2ffc1b44a18bec382189e
+	at ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(LoginTest.java:24)
+
+ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(When buyer trying to login with blank email,,Passw0rd,false,Lütfen geçerli bir e-posta adresi giriniz.) [3]  Time elapsed: 8.37 s  <<< ERROR!
+org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Mac111019', ip: 'fe80:0:0:0:14c3:e670:a94d:3e40%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/5_/wyxvz7wj3z5...}, goog:chromeOptions: {debuggerAddress: localhost:65044}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6888f8e3c87a416e6dfda01f75f202e7
+	at ui.LoginTest.shouldLoginWithMultipleCredentialsAsParameterized(LoginTest.java:24)
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%highlight{%d{HH:mm:ss.SSS} [%t] %-5level %C{1}.%M - %m%n}"/>
+        </Console>
+        <Console name="STDERR" target="SYSTEM_ERR">
+            <PatternLayout pattern="%highlight{%d{HH:mm:ss.SSS} [%t] %-5level %C{1}.%M - %m%n}"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+        <Logger name="org.apache.http" level="info" additivity="false">
+            <AppenderRef ref="STDERR"/>
+        </Logger>
+        <Logger name="io.restassured" level="info" additivity="false">
+            <AppenderRef ref="STDERR"/>
+        </Logger>
+    </Loggers>
+</Configuration>
