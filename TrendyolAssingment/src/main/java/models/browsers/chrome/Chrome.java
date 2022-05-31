@@ -14,6 +14,7 @@ public abstract class Chrome extends Browser {
 //        ChromeDriverManager.getInstance().version("98.0.4758.102").setup();
         System.setProperty("webdriver.chrome.driver", "src/main/java/models/browsers/chrome/chromedriver");
         webDriver = new ChromeDriver(getOptions(false));
+        System.setProperty("webdriver.chrome.silentOutput", "true"); // İgnore ChromeDriver warnings
         webDriver.manage().window().maximize();
     }
 
